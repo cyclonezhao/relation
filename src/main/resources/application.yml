@@ -1,11 +1,15 @@
 server:
   port: 7080
+  servlet:
+    context-path:
 spring:
+  application:
+    name: relation
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/relation
+    url: jdbc:h2:file:./h2DB;FILE_LOCK=SOCKET
     username: root
     password: 123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.h2.Driver
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:

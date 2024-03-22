@@ -2,3 +2,4 @@
 .idea/*
 relation.iml
 target/*
+*.db

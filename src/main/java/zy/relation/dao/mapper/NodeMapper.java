@@ -1,7 +1,7 @@
-package zy.relation.mapper;
+package zy.relation.dao.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import zy.relation.entity.Node;
+import zy.relation.dao.entity.Node;
 
 import java.util.List;
 

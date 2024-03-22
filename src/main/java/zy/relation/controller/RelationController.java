@@ -1,11 +1,10 @@
 package zy.relation.controller;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import zy.relation.entity.Node;
-import zy.relation.mapper.NodeMapper;
+import zy.relation.dao.entity.Node;
+import zy.relation.dao.mapper.NodeMapper;
 
 import javax.annotation.Resource;
 import java.util.List;

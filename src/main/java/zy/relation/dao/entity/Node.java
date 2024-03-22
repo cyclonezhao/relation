@@ -1,4 +1,4 @@
-package zy.relation.entity;
+package zy.relation.dao.entity;
 
 import lombok.Builder;
 import lombok.Data;

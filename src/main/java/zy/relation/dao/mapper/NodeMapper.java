@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface NodeMapper {
-    public List<Node> list();
+    public List<Node> list(long categoryId);
 
     void insert(Node node);
 }

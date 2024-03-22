@@ -5,6 +5,6 @@
         INSERT INTO T_NODE (ID, NUMBER, DESCRIPTION) VALUES(#{id}, #{number}, #{description})
     </insert>
     <select id="list" resultType="zy.relation.dao.entity.Node">
-        select id,  number, description from T_NODE
+        select id,  number, description from T_NODE where CATEGORY_ID = #{categoryId}
     </select>
 </mapper>

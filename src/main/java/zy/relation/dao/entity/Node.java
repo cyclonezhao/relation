@@ -5,8 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Node {
-    private long id;
+public class Node extends BaseEntity {
     private String number;
     private String description;
 }

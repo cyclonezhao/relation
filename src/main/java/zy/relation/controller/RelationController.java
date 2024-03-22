@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import zy.relation.dao.entity.Node;
 import zy.relation.dao.mapper.NodeMapper;
+import zy.relation.dao.mybatisplus.Sequence;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -22,7 +23,7 @@ public class RelationController {
 
     @GetMapping("add")
     public void add(){
-        Node node = Node.builder().id(1).number("dfd").description("dlkjfds").build();
+        Node node = Node.builder().number("dfd").description("dlkjfds").build();
         nodeMapper.insert(node);
     }
 }
